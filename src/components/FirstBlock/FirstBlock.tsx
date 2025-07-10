@@ -16,7 +16,7 @@ export function FirstBlock() {
                         <h1 className="text-5xl font-semibold">
                             La nueva
                             <span className="block degradedBlue bg-blueLight">
-                                academia digital
+                                universidad de las fuerzas armadas
                             </span>
                             para aprender
                         </h1>
