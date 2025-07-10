@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f0d0ddc;
+  color: #656dae;
+  font-family: 'Inter', sans-serif; /* Fuente moderna y profesional */
+}
+
+/* Estilos para el texto seleccionado */
+::selection {
+  background: #BF6BA9; /* Color vibrante de remate visual */
+  color: #fff;
+}
+
+/* Clase degradada para texto */
+.degradedBlue {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: 5px 0;
+  background-image: linear-gradient(90deg, #3952A6, #BF6BA9); /* Degradado llamativo */
+}
+
+/* Estilos para la paginación de Swiper */
+.swiper-pagination-bullet {
+  background: #A497C5 !important; /* Color vibrante */
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #BF6BA9 !important; /* Color vibrante de remate */
+}
+
+/* Estilo para slider horizontal */
+.slider-horizontal {
+  display: flex;
+  animation: swipe 5000ms linear infinite backwards;
+}
+
+@keyframes swipe {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+/* Botones principales */
+button {
+  background-color: #A497C5; /* Color principal vibrante */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #3952A6; /* Resaltado con un color secundario */
+  transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
+}
+
+button:active {
+  transform: scale(0.98); /* Toque al presionar */
+}
+
+/* Enlaces */
+a {
+  color: #3952A6; /* Color de remate vibrante */
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+  color: #BF6BA9; /* Efecto visual al pasar el mouse */
+  transform: scale(1.1); /* Le da un toque dinámico */
+}
+
+/* Animación de fade-in para elementos */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Efecto de glow en los enlaces al pasar el cursor */
+a:hover {
+  text-decoration: underline;
+  box-shadow: 0px 0px 15px 4px rgba(255, 87, 34, 0.6);
+}
